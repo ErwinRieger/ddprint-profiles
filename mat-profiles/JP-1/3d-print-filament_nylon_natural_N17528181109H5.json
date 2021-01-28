@@ -1,0 +1,32 @@
+{
+  # Usable, but high temperatures > 250° needed.
+  "usable": true,
+  "properties_80" : {
+      "version":  5,
+      "slippage": 0.10,
+
+      # Fixed PWM: 98
+      # t: 107.08, TempAvg: 255.0, fixed pwm: 98, target flowrate: 12.191 mm³/s, actual flowrate: 10.94 mm³/s, current ratio: 0.90
+      # End step, average flowrate: 11.01 mm³/s at pwm: 98, temp: 255.0 °C, ratio: 0.90, break
+      # Material properties:
+      # a1 for pwm
+      "Kpwm": 0.1854,
+      # a1 for temp
+      "Ktemp": 0.1353,
+      # a0 for pwm
+      "P0pwm": 71.0000,
+      # a0 for temp
+      "P0temp": 218.0321,
+      # feedrate at a0
+      "FR0pwm": 6.0058,
+
+      # Avg: P0temp: 229.90, P0pwm: 99.70, grip: 0.97, FR0pwm: 5.51 mm³/s
+      # Material properties, printing:
+      # a0 for pwm
+      "P0pwmPrint": 99.7000,
+      # a0 for temp
+      "P0tempPrint": 229.9000,
+      # feedrate at a0
+      "FR0pwmPrint": 5.5082
+ }
+}

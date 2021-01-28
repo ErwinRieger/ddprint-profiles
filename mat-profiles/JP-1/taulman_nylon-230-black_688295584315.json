@@ -1,0 +1,34 @@
+{
+  # Good nylon filament, prints with a lower tempearture range, but still
+  # difficult to handle (hygroscopic, warping, bedadhesion...).
+  "usable": true,
+  "properties_80" : {
+      "version":  5,
+      "slippage": 0.10,
+
+      # t: 120.23, TempAvg: 256.4, fixed pwm: 93, target flowrate: 11.156 mm³/s, actual flowrate: 10.03 mm³/s, current ratio: 0.90
+      # End step, average flowrate: 10.08 mm³/s at pwm: 93, temp: 256.4 °C, ratio: 0.90, break
+
+      # Material properties:
+      # a1 for pwm
+      "Kpwm": 0.1451,
+      # a1 for temp
+      "Ktemp": 0.0896,
+      # a0 for pwm
+      "P0pwm": 59.0000,
+      # a0 for temp
+      "P0temp": 201.2641,
+      # feedrate at a0
+      "FR0pwm": 5.1445,
+
+      # Avg: P0temp: 237.10, P0pwm: 75.20, grip: 0.90, FR0pwm: 8.53 mm³/s
+
+      # Material properties, printing:
+      # a0 for pwm
+      "P0pwmPrint": 75.2000,
+      # a0 for temp
+      "P0tempPrint": 237.1000,
+      # feedrate at a0
+      "FR0pwmPrint": 8.5332
+ }
+}

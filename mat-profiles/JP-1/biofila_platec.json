@@ -1,0 +1,39 @@
+{
+  #
+  # Platec ist irgendwie eine ganz besondere mischung:
+  # * sehr fliessfaehig schon bei niedrigen temperaturen
+  # * hohe flussraten moeglich
+  # * erzielt bei measure2 hoehere werte als into-air?
+  # Allerdings gibt es aber auch keinen besonderen grund, die diese spezialbehandlung
+  # (z.b. spezielles basisprofil fuer platec) rechtfertigen wuerde.
+  #
+  "usable": false,
+  "properties_80" : {
+      "version":  5,
+      "slippage": 0.10,
+
+      # Fixed PWM: 97
+      # t: 153.95, TempAvg: 236.9, fixed pwm: 97, target flowrate: 21.544 mm³/s, actual flowrate: 19.30 mm³/s, current ratio: 0.90
+      # End step, average flowrate: 19.39 mm³/s at pwm: 97, temp: 236.9 °C, ratio: 0.90, break
+      # Material properties:
+      # a1 for pwm
+      "Kpwm": 0.2873,
+      # a1 for temp
+      "Ktemp": 0.1989,
+      # a0 for pwm
+      "P0pwm": 56.0000,
+      # a0 for temp
+      "P0temp": 177.6770,
+      # feedrate at a0
+      "FR0pwm": 7.6120,
+
+      # Avg: P0temp: 200.90, P0pwm: 84.70, grip: 0.90, FR0pwm: 13.41 mm³/s
+      # Material properties, printing:
+      # a0 for pwm
+      "P0pwmPrint": 84.7000,
+      # a0 for temp
+      "P0tempPrint": 200.9000,
+      # feedrate at a0
+      "FR0pwmPrint": 13.4093
+  }
+}
