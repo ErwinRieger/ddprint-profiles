@@ -1,0 +1,26 @@
+{
+  "properties_80" : {
+      "version":  5,
+      "slippage": 0.10,
+
+      # Material properties:
+      # a1 for pwm
+      "Kpwm": 0.3026,
+      # a1 for temp
+      "Ktemp": 0.1859,
+      # a0 for pwm
+      "P0pwm": 51.0000,
+      # a0 for temp
+      "P0temp": 180.9444,
+      # feedrate at a0
+      "FR0pwm": 6.3317,
+
+      # Material properties, printing:
+      # a0 for pwm
+      "P0pwmPrint": 69.7000,
+      # a0 for temp
+      "P0tempPrint": 223.5000,
+      # feedrate at a0
+      "FR0pwmPrint": 15.3515
+ }
+}

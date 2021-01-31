@@ -1,0 +1,31 @@
+{
+  "properties_80" : {
+      "version":  5,
+      "slippage": 0.10,
+
+      # Fixed PWM: 85
+      # t: 243.81, TempAvg: 244.7, fixed pwm: 85, target flowrate: 16.805 mm³/s, actual flowrate: 15.11 mm³/s, current ratio: 0.90
+      # End step, average flowrate: 15.13 mm³/s at pwm: 85, temp: 244.7 °C, ratio: 0.90, break
+
+      # Material properties:
+      # a1 for pwm
+      "Kpwm": 0.3426,
+      # a1 for temp
+      "Ktemp": 0.2406,
+      # a0 for pwm
+      "P0pwm": 53.0000,
+      # a0 for temp
+      "P0temp": 199.1071,
+      # feedrate at a0
+      "FR0pwm": 4.1668,
+
+      # Avg: P0temp: 227.80, P0pwm: 65.60, grip: 0.90, FR0pwm: 8.86 mm³/s
+      # Material properties, printing:
+      # a0 for pwm
+      "P0pwmPrint": 65.6000,
+      # a0 for temp
+      "P0tempPrint": 227.8000,
+      # feedrate at a0
+      "FR0pwmPrint": 8.8618
+ }
+}
