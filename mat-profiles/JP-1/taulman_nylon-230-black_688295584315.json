@@ -1,7 +1,4 @@
 {
-  # Good nylon filament, prints with a lower tempearture range, but still
-  # difficult to handle (hygroscopic, warping, bedadhesion...).
-  "usable": true,
   "properties_80" : {
       "version":  5,
       "slippage": 0.10,

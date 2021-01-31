@@ -1,6 +1,4 @@
 {
-  # Usable, but high temperatures > 250° needed.
-  "usable": true,
   "properties_80" : {
       "version":  5,
       "slippage": 0.10,

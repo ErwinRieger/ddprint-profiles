@@ -1,13 +1,4 @@
 {
-  #
-  # Platec ist irgendwie eine ganz besondere mischung:
-  # * sehr fliessfaehig schon bei niedrigen temperaturen
-  # * hohe flussraten moeglich
-  # * erzielt bei measure2 hoehere werte als into-air?
-  # Allerdings gibt es aber auch keinen besonderen grund, die diese spezialbehandlung
-  # (z.b. spezielles basisprofil fuer platec) rechtfertigen wuerde.
-  #
-  "usable": false,
   "properties_80" : {
       "version":  5,
       "slippage": 0.10,
