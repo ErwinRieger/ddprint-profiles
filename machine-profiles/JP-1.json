@@ -1,0 +1,122 @@
+{
+  "machinenames" : ["JP #1"],
+  # BMG feeder, bourns ems22 sensor
+  "hwVersion": 5,
+  # UM2 Microstepping: [x:16, y:16, z:8,  a:16]
+  # JP  Microstepping: [x:32, y:32, z:32, a:32, b:32]
+  "axes"  : {
+    "X" : {
+      "platform_length" : 350,
+      # 40 kHz
+      "max_feedrate"  : 250,
+      "steps_per_mm"  : 160,
+      "jerk"          : 20
+    },
+    "Y" : {
+      "platform_length":  220,
+      # 40 kHz
+      "max_feedrate"  : 250,
+      "steps_per_mm"  : 160,
+      "jerk"          : 20
+    },
+    "Z" : {
+      "platform_length": 320,
+      # 40 kHz
+      "max_feedrate"  : 50,
+      "steps_per_mm"  : 800,
+      "jerk"          : 0.5
+    },
+    "A" : {
+      # 40 kHz bei 25mm/s XXX
+      "max_feedrate"  : 30,
+      "steps_per_mm"  : 1725,
+      "jerk"          : 7.5
+    },
+    "B" : {
+      # 40 kHz bei 25mm/s XXX
+      "max_feedrate"  : 30,
+      "steps_per_mm"  : 1725,
+      "jerk"          : 7.5
+    }
+  },
+  # Length of bowden tube for *insertfilament* command
+  "bowdenLength": 570,
+  # Max stepper frequency
+  "maxStepperFreq": 100000,
+  # 1.75 mm filament, with advance [mm/s]
+  "RetractFeedrate"  : 50,
+  "RetractLength"  : 2.0,
+  # Maximum acceleration of each axis X, Y, Z, A, B [mm/s²]
+  "MaxAxisAcceleration": [9000, 9000, 100, 10000, 10000],
+  # Sensor counts per mm
+  # 1024/(3.17*math.pi)
+  "filSensorCountsPerMM": 102.823,
+  # Sensor reading interval [s]
+  "filSensorInterval": 0.1,
+  # Filamentsensor calibration data. This is the ratio of
+  # filamentsensor counts to e-stepper steps.
+  "filSensorCalibration": 0.0599,
+#
+# Average Tg/Tu:
+# Tu: 5.356464709520119
+# Tg: 93.4560014319264
+# Ziegler PID 1.2:
+# "Kp": 6.4368,
+# "Ki": 0.6008,
+# "Kd": 2.4034,
+# Chien aperiodisch PID, gute führung:
+# "Kp": 3.2184,
+# "Ki": 0.0344,
+# "Kd": 1.2017,
+# T-Sum method PID parameters (fast):
+# Tsum:  111.253369
+# "Kp": 0.6149,
+# "Ki": 0.0069,
+# "Kd": 0.0285,
+  # Hotend PID value sets
+  "ZN": {
+	# Ziegler PID 1.2:
+	"Kp": 6.4368,
+	"Ki": 0.6008,
+	"Kd": 2.4034
+  },
+  "CH": {
+	# Chien aperiodisch
+	"Kp": 3.2184,
+	"Ki": 0.0344,
+	"Kd": 1.2017
+  },
+  "TS": {
+	# T-Sum method PID parameters (fast):
+	"Kp": 0.6149,
+	"Ki": 0.0069,
+	"Kd": 0.0285
+  },
+  # From pidAutoTune.py:
+  "Tu":  5.3564,
+  "Tg": 93.4560,
+  # Bedleveling mode
+  "bedLevelMode": "U5Point",
+  # Bedleveling Z value
+  "add_homeing_z": -11.9,
+  # Diameter of feeder (knurled) wheel, take some 
+  # filament compression into account.
+  # UM2 knurled wheel diameter is about 8 mm.
+  # BMG knurled wheel diameter is about 7.5mm
+  "feederWheelDiam": 7.4,
+  # Special handling of weak UM2 power supply:
+  # Wait for this bedtemp until print continues.
+  "weakPowerBedTemp": 50
+}
+
+
+
+
+
+
+
+
+
+
+
+

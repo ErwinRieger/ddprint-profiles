@@ -1,0 +1,88 @@
+{
+  # BMG feeder with bourns sensor
+  "hwVersion": 5,
+  "axes"  : {
+    "X" : {
+      "platform_length" : 225,
+      "max_feedrate"  : 300,
+      "steps_per_mm"  : 80,
+      "jerk"          : 20
+    },
+    "Y" : {
+      "platform_length":  225,
+      "max_feedrate"  : 300,
+      "steps_per_mm"  : 80,
+      "jerk"          : 20
+    },
+    "Z" : {
+      "platform_length": 225,
+      "max_feedrate"  : 40,
+      "steps_per_mm"  : 200,
+      "jerk"          : 0.5
+    },
+    "A" : {
+      "max_feedrate"  : 45,
+      # UM2 feeder:
+      # "steps_per_mm"  : 136,
+      # BMG feeder:
+      "steps_per_mm"  : 435,
+      "jerk"          : 7.5
+    },
+    "B" : {
+      "max_feedrate"  : 45,
+      "steps_per_mm"  : 275,
+      "jerk"          : 7.5
+    }
+  },
+  # Length of bowden tube for *insertfilament* command
+  "bowdenLength": 750,
+  # Max stepper frequency
+  "maxStepperFreq": 50000,
+  # 1.75 mm filament, with advance [mm/s]
+  "RetractFeedrate"  : 50,
+  "RetractLength"  : 2.0,
+  # Maximum acceleration of each axis X, Y, Z, A, B [mm/s²]
+  "MaxAxisAcceleration": [9000, 9000, 100, 10000, 10000],
+  # Sensor counts per mm
+  # 1024/(3.17*math.pi)
+  "filSensorCountsPerMM": 102.823,
+  # Sensor reading interval [s]
+  "filSensorInterval": 0.1,
+  # Filamentsensor calibration data. This is the ratio of
+  # filamentsensor counts to e-stepper steps.
+  # UM2:
+  # "filSensorCalibration": 0.747,
+  # BMG:
+  "filSensorCalibration": 0.244,
+  # Hotend PID values, chien aperiodisch PID, gute führung
+  "Kp": 4.01,
+  "Ki": 0.034,
+  "Kd": 0.978,
+  # From pidAutoTune.py:
+  "Tu": 8.2,
+  "Tg": 118.5,
+  # Bedleveling mode
+  "bedLevelMode": "Triangle3Point",
+  # Bedleveling Z value
+  "add_homeing_z": -16.2,
+  # Diameter of feeder (knurled) wheel, take some 
+  # filament compression into account.
+  # UM2 knurled wheel diameter is about 8 mm.
+  # BMG knurled wheel diameter is about 7.5mm
+  "feederWheelDiam": 7.4,
+  # Special handling of weak UM2 power supply:
+  # Wait for this bedtemp until print continues.
+  "weakPowerBedTemp": 50
+}
+
+
+
+
+
+
+
+
+
+
+
+
