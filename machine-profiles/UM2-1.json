@@ -54,13 +54,29 @@
   # "filSensorCalibration": 0.747,
   # BMG:
   "filSensorCalibration": 0.244,
-  # Hotend PID values, chien aperiodisch PID, gute führung
-  "Kp": 4.01,
-  "Ki": 0.034,
-  "Kd": 0.978,
+
   # From pidAutoTune.py:
+  "ZN": {
+    # Ziegler PID 1.2:
+    "Kp": 8.0192,
+    "Ki": 0.4890,
+    "Kd": 1.9560
+  },
+  "CH": {
+    # Chien aperiodisch PID, gute führung:
+    "Kp": 4.0096,
+    "Ki": 0.0338,
+    "Kd": 0.9780
+    },
+  "TS": {
+    # T-Sum method PID parameters (fast):
+    "Kp": 0.9246,
+    "Ki": 0.0093,
+    "Kd": 0.0382
+  },
   "Tu": 8.2,
   "Tg": 118.5,
+
   # Bedleveling mode
   "bedLevelMode": "Triangle3Point",
   # Bedleveling Z value
