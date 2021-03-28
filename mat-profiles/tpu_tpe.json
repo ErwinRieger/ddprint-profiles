@@ -9,7 +9,7 @@
   "bedTemp"           : 65,
   "bedTempReduced"    : 60,
   # xxx todo: measure
-  "kAdvance"          : 1.0, 
+  "kAdvance"          : 0.5,
 
   # xxx todo: copied from petg...
   "properties_80" : {
