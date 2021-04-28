@@ -1,7 +1,7 @@
 {
   "machinenames" : ["UM2 #2"],
   # Dual feeder motor, pmw3360 flowrate sensor
-  "hwVersion": 4,
+  "hwVersion": 5,
   "axes"  : {
     "X" : {
       "platform_length" : 225,
@@ -50,23 +50,27 @@
   # filamentsensor counts to e-stepper steps.
   "filSensorCalibration": 0.369,
 
-  # Hotend PID value sets
-  "pidPrint" : {
-    # Ziegler PID 1.2:
-    "Kp": 5.2199,
-    "Ki": 0.2357,
-    "Kd": 0.9427
-  },
-  "pidMeasure" : {
-    # T-Sum method PID parameters (fast):
-    "Kp": 1.1233,
-    "Ki": 0.0164,
-    "Kd": 0.0675
-  },
 
-  # From pidAutoTune.py:
-  "Tu": 11.0740,
-  "Tg": 85.7650,
+# raw endtemp, endtemp: 77.625 77.625 1.1942307692307692
+##################################################
+## PID Parameter aus Sprungantwort              ##
+##################################################
+# Max time between samples: 0.1157 s
+# Mean sampling freq 0.1047 s, 9.5468 Hz
+# Ks,Kp is: 1.1942307692307692
+# Tg/Tu nach Gregory Reeves, https://www.youtube.com/watch?v=4o4cqsu8JnE:
+# Average Tg/Tu:
+"Tu": 12.4988,
+"Tg": 99.8803, "ZN": {
+#Ziegler PID 1.2:
+"Kp": 8.0298,
+"Ki": 0.3212,
+"Kd": 1.2849} , "CH": {
+#Chien aperiodisch PID, gute führung:
+"Kp": 4.0149,
+"Ki": 0.0402,
+"Kd": 0.6424},
+
   # Bedleveling mode
   "bedLevelMode": "Triangle3Point",
   # Bedleveling Z value
