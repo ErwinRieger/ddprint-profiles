@@ -1,36 +1,33 @@
 {
-  # BMG feeder with bourns sensor
-  "hwVersion": 5,
+  # Machine profile for simulation, outdated.
+  "hwVersion": 4,
   "axes"  : {
     "X" : {
-      "platform_length" : 225,
+      "platform_length" : 230,
       "max_feedrate"  : 300,
       "steps_per_mm"  : 80,
       "jerk"          : 20
     },
     "Y" : {
-      "platform_length":  225,
+      "platform_length":  230,
       "max_feedrate"  : 300,
       "steps_per_mm"  : 80,
       "jerk"          : 20
     },
     "Z" : {
-      "platform_length": 225,
+      "platform_length": 230,
       "max_feedrate"  : 40,
       "steps_per_mm"  : 200,
       "jerk"          : 0.5
     },
     "A" : {
       "max_feedrate"  : 45,
-      # UM2 feeder:
-      # "steps_per_mm"  : 136,
-      # BMG feeder:
-      "steps_per_mm"  : 435,
+      "steps_per_mm"  : 136,
       "jerk"          : 7.5
     },
     "B" : {
       "max_feedrate"  : 45,
-      "steps_per_mm"  : 275,
+      "steps_per_mm"  : 274,
       "jerk"          : 7.5
     }
   },
@@ -50,48 +47,23 @@
   "filSensorInterval": 0.1,
   # Filamentsensor calibration data. This is the ratio of
   # filamentsensor counts to e-stepper steps.
-  # UM2:
-  # "filSensorCalibration": 0.747,
-  # BMG:
-  "filSensorCalibration": 0.244,
-
+  "filSensorCalibration": 0.747,
+  # Hotend PID values, chien aperiodisch PID, gute führung
+  "Kp": 4.01,
+  "Ki": 0.034,
+  "Kd": 0.978,
   # From pidAutoTune.py:
-  "ZN": {
-    # Ziegler PID 1.2:
-    "Kp": 8.0192,
-    "Ki": 0.4890,
-    "Kd": 1.9560
-  },
-  "CH": {
-    # Chien aperiodisch PID, gute führung:
-    "Kp": 4.0096,
-    "Ki": 0.0338,
-    "Kd": 0.9780
-    },
-  "TS": {
-    # T-Sum method PID parameters (fast):
-    "Kp": 0.9246,
-    "Ki": 0.0093,
-    "Kd": 0.0382
-  },
   "Tu": 8.2,
   "Tg": 118.5,
-
-  # Bedleveling mode
-  "bedLevelMode": "Triangle3Point",
   # Bedleveling Z value
-  "add_homeing_z": -16.2,
+  "add_homeing_z": -16.35,
   # Diameter of feeder (knurled) wheel, take some 
   # filament compression into account.
   # UM2 knurled wheel diameter is about 8 mm.
-  # BMG knurled wheel diameter is about 7.5mm
-  "feederWheelDiam": 7.4,
+  "feederWheelDiam": 7.8,
   # Special handling of weak UM2 power supply:
   # Wait for this bedtemp until print continues.
-  "weakPowerBedTemp": 50,
-
-  # Hotend autotune pid value
-  "Xo": 50
+  "weakPowerBedTemp": 0
 }
 
 

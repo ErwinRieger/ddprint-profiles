@@ -55,21 +55,18 @@
 ##################################################
 ## PID Parameter aus Sprungantwort              ##
 ##################################################
-# Max time between samples: 0.1157 s
-# Mean sampling freq 0.1047 s, 9.5468 Hz
-# Ks,Kp is: 1.1942307692307692
-# Tg/Tu nach Gregory Reeves, https://www.youtube.com/watch?v=4o4cqsu8JnE:
-# Average Tg/Tu:
-"Tu": 12.4988,
-"Tg": 99.8803, "ZN": {
-#Ziegler PID 1.2:
-"Kp": 8.0298,
-"Ki": 0.3212,
-"Kd": 1.2849} , "CH": {
-#Chien aperiodisch PID, gute führung:
-"Kp": 4.0149,
-"Ki": 0.0402,
-"Kd": 0.6424},
+
+"Tu": 11.3323,
+"Tg": 114.6975, "ZN": {
+    #Ziegler PID 1.2:
+    "Kp": 5.1683,
+    "Ki": 0.2280,
+    "Kd": 0.9121} , "CH": {
+    #Chien aperiodisch PID, gute führung:
+    "Kp": 2.5842,
+    "Ki": 0.0225,
+    "Kd": 0.4561},
+
 
   # Bedleveling mode
   "bedLevelMode": "Triangle3Point",
@@ -81,7 +78,10 @@
   "feederWheelDiam": 7.8,
   # Special handling of weak UM2 power supply:
   # Wait for this bedtemp until print continues.
-  "weakPowerBedTemp": 50
+  "weakPowerBedTemp": 50,
+
+  # Hotend autotune pid value
+  "Xo": 50
 }
 
 

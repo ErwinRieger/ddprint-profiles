@@ -106,7 +106,10 @@
   "feederWheelDiam": 7.4,
   # Special handling of weak UM2 power supply:
   # Wait for this bedtemp until print continues.
-  "weakPowerBedTemp": 50
+  "weakPowerBedTemp": 50,
+
+  # Hotend autotune pid value
+  "Xo": 50
 }
 
 
