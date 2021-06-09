@@ -80,7 +80,7 @@
   # Bedleveling mode
   "bedLevelMode": "Triangle3Point",
   # Bedleveling Z value
-  "add_homeing_z": -16.2,
+  "add_homeing_z": -15.400,
   # Diameter of feeder (knurled) wheel, take some 
   # filament compression into account.
   # UM2 knurled wheel diameter is about 8 mm.
