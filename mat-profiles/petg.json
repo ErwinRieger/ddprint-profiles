@@ -28,7 +28,10 @@
       "Ktemp": 0.1,
       "P0pwm": 90,
       "FR0pwm": 2.5,
-      "P0temp": 205.0
+      "P0temp": 205.0,
+      "P0pwmPrint": 100.0,
+      "P0tempPrint": 200.0,
+      "FR0pwmPrint": 2.5
   }
 }
 
