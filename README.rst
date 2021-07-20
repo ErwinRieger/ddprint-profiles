@@ -3,7 +3,7 @@ ddprint-profiles
 
 Profiles used by ddprint: machine-profiles, measured filament profiles and simplify3d profiles.
 
-machine-profiles: Machine profiles for different printers. - todo: upload
+machine-profiles: Machine profiles for different printers.
 
 mat-profiles: Material profiles measuerd with ddprint.
 
