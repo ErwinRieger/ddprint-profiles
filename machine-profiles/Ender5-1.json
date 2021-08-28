@@ -1,0 +1,108 @@
+{
+  "# Ender default feeder",
+  "hwVersion": 5,
+  "axes"  : {
+    "X" : {
+      "platform_length" : 230,
+      "max_feedrate"  : 250,
+      "steps_per_mm"  : 80,
+      "jerk"          : 10,
+      "home_dir"      : 1,
+      "home_feedrate" : 40
+    },
+    "Y" : {
+      "platform_length":  225,
+      "max_feedrate"  : 250,
+      "steps_per_mm"  : 80,
+      "jerk"          : 10,
+      "home_dir"      : 1,
+      "home_feedrate" : 40
+    },
+    "Z" : {
+      "# Available height is 325, but axis gets sticky above 300mm.",
+      "platform_length": 300,
+      "max_feedrate"  : 25,
+      "steps_per_mm"  : 800,
+      "jerk"          : 0.5,
+      "home_dir"      : 0,
+      "home_feedrate" : 25
+    },
+    "A" : {
+      "max_feedrate"  : 45,
+      "steps_per_mm"  : 93,
+      "jerk"          : 7.5
+    },
+    "B" : {
+      "max_feedrate"  : 45,
+      "steps_per_mm"  : 93,
+      "jerk"          : 7.5
+    }
+  },
+  # Length of bowden tube for *insertfilament* command
+  "bowdenLength": 700,
+  # Max stepper frequency
+  "maxStepperFreq": 50000,
+  # 1.75 mm filament, with advance [mm/s]
+  "RetractFeedrate"  : 40,
+  "RetractLength"  : 4.0,
+  # Maximum acceleration of each axis X, Y, Z, A, B [mm/s²]
+  "MaxAxisAcceleration": [3000, 3000, 100, 7500, 7500],
+  # Sensor counts per mm
+  # 1024/(3.17*math.pi)
+  "filSensorCountsPerMM": 102.823,
+  # Sensor reading interval [s]
+  "filSensorInterval": 0.1,
+  # Filamentsensor calibration data. This is the ratio of
+  # filamentsensor counts to e-stepper steps.
+  "filSensorCalibration": 0.25,
+
+  # From pidAutoTune.py:
+  "ZN": {
+    "Kp": 14.7016,
+    "Ki": 1.0154,
+    "Kd": 4.0616
+  },
+
+  "CH": {
+    "Kp": 7.3508,
+    "Ki": 0.0666,
+    "Kd": 2.0308
+  },
+
+  "TS": {
+    "Kp": 1.6070,
+    "Ki": 0.0174,
+    "Kd": 0.0718
+  },
+
+  "Tu": 7.2393,
+  "Tg": 110.3832,
+
+  # Bedleveling mode
+  "bedLevelMode": "Triangle3Point",
+  # Bedleveling Z value
+  "add_homeing_z": 0,
+  # Diameter of feeder (knurled) wheel, take some 
+  # filament compression into account.
+  # UM2 knurled wheel diameter is about 8 mm.
+  # BMG knurled wheel diameter is about 7.5mm
+  "feederWheelDiam": 7.4,
+  # Special handling of weak UM2 power supply:
+  # Wait for this bedtemp until print continues.
+  "weakPowerBedTemp": 50,
+
+  # Hotend autotune pid value
+  "Xo": 127
+}
+
+
+
+
+
+
+
+
+
+
+
+
