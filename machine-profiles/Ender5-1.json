@@ -29,7 +29,7 @@
     },
     "A" : {
       "max_feedrate"  : 45,
-      "steps_per_mm"  : 93,
+      "steps_per_mm"  : 98,
       "jerk"          : 7.5
     },
     "B" : {
@@ -54,7 +54,7 @@
   "filSensorInterval": 0.1,
   # Filamentsensor calibration data. This is the ratio of
   # filamentsensor counts to e-stepper steps.
-  "filSensorCalibration": 0.25,
+  "filSensorCalibration": 1.067,
 
   # From pidAutoTune.py:
   "ZN": {
@@ -79,16 +79,12 @@
   "Tg": 110.3832,
 
   # Bedleveling mode
-  "bedLevelMode": "Triangle3Point",
-  # Bedleveling Z value
+  "bedLevelMode": "Rect4Point",
+  "# Bedleveling Z value, always 0 for the ender5",
   "add_homeing_z": 0,
   # Diameter of feeder (knurled) wheel, take some 
   # filament compression into account.
-  # UM2 knurled wheel diameter is about 8 mm.
-  # BMG knurled wheel diameter is about 7.5mm
-  "feederWheelDiam": 7.4,
-  # Special handling of weak UM2 power supply:
-  # Wait for this bedtemp until print continues.
+  "feederWheelDiam": 10.85,
   "weakPowerBedTemp": 50,
 
   # Hotend autotune pid value
