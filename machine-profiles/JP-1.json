@@ -10,21 +10,27 @@
       # 40 kHz
       "max_feedrate"  : 250,
       "steps_per_mm"  : 160,
-      "jerk"          : 20
+      "jerk"          : 20,
+      "home_dir"      : 0,
+      "home_feedrate" : 100
     },
     "Y" : {
       "platform_length":  220,
       # 40 kHz
       "max_feedrate"  : 250,
       "steps_per_mm"  : 160,
-      "jerk"          : 20
+      "jerk"          : 20,
+      "home_dir"      : 1,
+      "home_feedrate" : 100
     },
     "Z" : {
       "platform_length": 320,
       # 40 kHz
       "max_feedrate"  : 50,
       "steps_per_mm"  : 800,
-      "jerk"          : 0.5
+      "jerk"          : 0.5,
+      "home_dir"      : 1,
+      "home_feedrate" : 40
     },
     "A" : {
       # 40 kHz bei 25mm/s XXX
