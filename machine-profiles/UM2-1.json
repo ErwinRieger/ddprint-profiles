@@ -6,23 +6,28 @@
       "platform_length" : 225,
       "max_feedrate"  : 300,
       "steps_per_mm"  : 80,
-      "jerk"          : 20
+      "jerk"          : 20,
+      "home_dir"      : 0,
+      "home_feedrate" : 100
     },
     "Y" : {
       "platform_length":  225,
       "max_feedrate"  : 300,
       "steps_per_mm"  : 80,
-      "jerk"          : 20
+      "jerk"          : 20,
+      "home_dir"      : 0,
+      "home_feedrate" : 100
     },
     "Z" : {
       "platform_length": 225,
       "max_feedrate"  : 40,
       "steps_per_mm"  : 200,
-      "jerk"          : 0.5
+      "jerk"          : 0.5,
+      "home_dir"      : 1,
+      "home_feedrate" : 40
     },
     "A" : {
       "max_feedrate"  : 45,
-      # UM2 feeder:
       # "steps_per_mm"  : 136,
       # BMG feeder:
       "steps_per_mm"  : 435,
@@ -35,6 +40,9 @@
     }
   },
   # Length of bowden tube for *insertfilament* command
+  "#",
+  "# Length of bowden tube for *insertfilament* command",
+  "#",
   "bowdenLength": 700,
   # Max stepper frequency
   "maxStepperFreq": 50000,
@@ -50,8 +58,6 @@
   "filSensorInterval": 0.1,
   # Filamentsensor calibration data. This is the ratio of
   # filamentsensor counts to e-stepper steps.
-  # UM2:
-  # "filSensorCalibration": 0.747,
   # BMG:
   "filSensorCalibration": 0.244,
 
