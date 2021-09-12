@@ -15,7 +15,7 @@
       "max_feedrate"  : 300,
       "steps_per_mm"  : 80,
       "jerk"          : 20,
-      "home_dir"      : 0,
+      "home_dir"      : 1,
       "home_feedrate" : 100
     },
     "Z" : {
