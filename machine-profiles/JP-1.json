@@ -10,7 +10,7 @@
       # 40 kHz
       "max_feedrate"  : 250,
       "steps_per_mm"  : 160,
-      "jerk"          : 20,
+      "jerk"          : 17.5,
       "home_dir"      : 0,
       "home_feedrate" : 100
     },
@@ -19,7 +19,7 @@
       # 40 kHz
       "max_feedrate"  : 250,
       "steps_per_mm"  : 160,
-      "jerk"          : 20,
+      "jerk"          : 17.5,
       "home_dir"      : 1,
       "home_feedrate" : 100
     },
