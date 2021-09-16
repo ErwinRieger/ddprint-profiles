@@ -28,8 +28,6 @@
     },
     "A" : {
       "max_feedrate"  : 45,
-      # "steps_per_mm"  : 136,
-      # BMG feeder:
       "steps_per_mm"  : 435,
       "jerk"          : 7.5
     },
@@ -39,7 +37,6 @@
       "jerk"          : 7.5
     }
   },
-  # Length of bowden tube for *insertfilament* command
   "#",
   "# Length of bowden tube for *insertfilament* command",
   "#",
