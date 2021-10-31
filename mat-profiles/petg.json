@@ -8,6 +8,8 @@
   "hotendMaxTemp"     : 260,
   "bedTemp"           : 85,
   "bedTempReduced"    : 80,
+  "# Temperature to keep bed on when printing on glass-bed, to avoid *chippig*.",
+  "keepBedtemp"       : 60,
   "kAdvance"          : 0.2,
 
   "properties_80" : {
