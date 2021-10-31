@@ -103,8 +103,9 @@
   "Tg": 93.4560,
   # Bedleveling mode
   "bedLevelMode": "U5Point",
-  # Bedleveling Z value
-  "add_homeing_z": -11.9,
+  # Bedleveling Z value, run "ddprint bedleveling" to
+  # determine this.
+  "add_homeing_z": -20,
   # Diameter of feeder (knurled) wheel, take some 
   # filament compression into account.
   # UM2 knurled wheel diameter is about 8 mm.
@@ -113,6 +114,7 @@
   # Special handling of weak UM2 power supply:
   # Wait for this bedtemp until print continues.
   "weakPowerBedTemp": 50,
+  "bedSurface": "glass",
 
   # Hotend autotune pid value
   "Xo": 50
