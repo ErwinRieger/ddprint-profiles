@@ -6,7 +6,7 @@
       "platform_length" : 225,
       "max_feedrate"  : 300,
       "steps_per_mm"  : 80,
-      "jerk"          : 20,
+      "jerk"          : 17.5,
       "home_dir"      : 0,
       "home_feedrate" : 100
     },
@@ -14,7 +14,7 @@
       "platform_length":  225,
       "max_feedrate"  : 300,
       "steps_per_mm"  : 80,
-      "jerk"          : 20,
+      "jerk"          : 17.5,
       "home_dir"      : 1,
       "home_feedrate" : 100
     },
