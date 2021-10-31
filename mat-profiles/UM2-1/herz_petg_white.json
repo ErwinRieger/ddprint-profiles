@@ -1,0 +1,28 @@
+{
+  "properties_40" : {
+    "version": 5,
+    "slippage": 0.10,
+
+    "# Material properties:",
+    "# measure 1:",
+    "# a1 for pwm",
+    "Kpwm": 0.1703,
+    "# a1 for temp",
+    "Ktemp": 0.1266,
+    "# a0 for pwm",
+    "P0pwm": 74.0000,
+    "# a0 for temp",
+    "P0temp": 200.9313,
+    "# feedrate at a0",
+    "FR0pwm": 1.7180,
+
+    "# measure 2 (printing):",
+    "# a0 for pwm:",
+    "P0pwmPrint": 98.3000,
+    "# a0 for temp",
+    "P0tempPrint": 221.2000,
+    "# feedrate at a0",
+    "FR0pwmPrint": 1.8300
+  }
+}
+
