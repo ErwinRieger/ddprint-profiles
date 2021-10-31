@@ -1,27 +1,18 @@
 {
-    "properties_80" : {
-    "version": 5,
-    "slippage": 0.10,
+  "properties_80" : {
+      "version":  5,
+      "slippage": 0.10,
 
-    "# Material properties:",
-    "# measure 1:",
-    "# a1 for pwm",
-    "Kpwm": 0.1452,
-    "# a1 for temp",
-    "Ktemp": 0.1507,
-    "# a0 for pwm",
-    "P0pwm": 93.0000,
-    "# a0 for temp",
-    "P0temp": 174.3438,
-    "# feedrate at a0",
-    "FR0pwm": 9.2086,
+      "# measure 1",
+      "Kpwm": 0.1843,
+      "Ktemp": 0.1691,
+      "P0pwm": 74.0000,
+      "P0temp": 170.1250,
+      "FR0pwm": 8.0267,
 
-    "# measure 2 (printing):",
-    "# a0 for pwm:",
-    "P0pwmPrint": 137.5000,
-    "# a0 for temp",
-    "P0tempPrint": 209.4000,
-    "# feedrate at a0",
-    "FR0pwmPrint": 13.4635
-  }
+      "# measure 2",
+      "P0pwmPrint": 115.7000,
+      "P0tempPrint": 224.7000,
+      "FR0pwmPrint": 12.8127
+ }
 }
