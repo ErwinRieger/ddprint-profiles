@@ -1,0 +1,118 @@
+  <autoConfigureQuality name="Draft">
+    <layerHeight>0.3</layerHeight>
+    <topSolidLayers>3</topSolidLayers>
+    <bottomSolidLayers>2</bottomSolidLayers>
+    <infillPercentage>8</infillPercentage>
+    <perimeterOutlines>1</perimeterOutlines>
+    <supportInfillPercentage>25</supportInfillPercentage>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Prototype">
+    <layerHeight>0.2</layerHeight>
+    <topSolidLayers>4</topSolidLayers>
+    <bottomSolidLayers>3</bottomSolidLayers>
+    <infillPercentage>15</infillPercentage>
+    <perimeterOutlines>2</perimeterOutlines>
+    <supportInfillPercentage>15</supportInfillPercentage>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Strong">
+    <layerHeight>0.2</layerHeight>
+    <topSolidLayers>5</topSolidLayers>
+    <bottomSolidLayers>4</bottomSolidLayers>
+    <infillPercentage>30</infillPercentage>
+    <perimeterOutlines>3</perimeterOutlines>
+    <supportInfillPercentage>40</supportInfillPercentage>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="MaterialMeasurement">
+    <bottomSolidLayers>0</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+    <skirtOffset>0</skirtOffset>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="TestKAdvance">
+    <extruder name="Primary Extruder">
+      <useRetract>0</useRetract>
+    </extruder>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="Speed-0.15x35-4.20m3/s">
+    <layerHeight>0.15</layerHeight>
+    <defaultSpeed>2100</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Speed-0.15x42-5.04mm3/s">
+    <layerHeight>0.15</layerHeight>
+    <defaultSpeed>2520</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Speed-0.15x50-6.00mm3/s">
+    <layerHeight>0.15</layerHeight>
+    <defaultSpeed>3000</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Speed-0.20x44-7.04mm3/s">
+    <layerHeight>0.2</layerHeight>
+    <defaultSpeed>2640</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Speed-0.20x50-8.00mm3/s">
+    <layerHeight>0.2</layerHeight>
+    <defaultSpeed>3000</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Speed-0.20x56-8.96mm3/s">
+    <layerHeight>0.2</layerHeight>
+    <defaultSpeed>3360</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="Speed-0.20x75-12.0mm3/s">
+    <layerHeight>0.2</layerHeight>
+    <defaultSpeed>4500</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="Speed-0.30x60-14.4mm3/s">
+    <layerHeight>0.2</layerHeight>
+    <defaultSpeed>3600</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="Speed-0.25x75-15.0mm3/s">
+    <layerHeight>0.2</layerHeight>
+    <defaultSpeed>4500</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="Speed-0.30x67-16.1mm3/s">
+    <layerHeight>0.2</layerHeight>
+    <defaultSpeed>4020</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="Speed-0.25x85-17.0mm3/s">
+    <layerHeight>0.2</layerHeight>
+    <defaultSpeed>5100</defaultSpeed>
+    <bottomSolidLayers>100</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="Stength 0.0">
+    <toolChangeGcode>; Set strength of print - 0.0 is more fast/figurine/vase mode - 1.0 is with more temperature for stronger parts - default is M901 W0.0,M901 W0.0</toolChangeGcode>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Stength 0.5">
+    <toolChangeGcode>; Set strength of print - 0.0 is more fast/figurine/vase mode - 1.0 is with more temperature for stronger parts - default is M901 W0.5,M901 W0.5</toolChangeGcode>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Stength 1.0">
+    <toolChangeGcode>; Set strength of print - 0.0 is more fast/figurine/vase mode - 1.0 is with more temperature for stronger parts - default is M901 W1.0,M901 W1.0</toolChangeGcode>
+  </autoConfigureQuality>

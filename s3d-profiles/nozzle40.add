@@ -1,0 +1,4 @@
+  <extruder name="Primary Extruder">
+    <diameter>0.4</diameter>
+    <width>0.4</width>
+  </extruder>

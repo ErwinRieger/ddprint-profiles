@@ -1,0 +1,13 @@
+  <overrideMachineDefinition>1</overrideMachineDefinition>
+  <machineTypeOverride>0</machineTypeOverride>
+  <strokeXoverride>230</strokeXoverride>
+  <strokeYoverride>225</strokeYoverride>
+  <strokeZoverride>300</strokeZoverride>
+  <flipXoverride>1</flipXoverride>
+  <flipYoverride>-1</flipYoverride>
+  <flipZoverride>1</flipZoverride>
+  <firmwareTypeOverride>RepRap (Marlin/Repetier/Sprinter)</firmwareTypeOverride>
+  <firstLayerHeightPercentage>75</firstLayerHeightPercentage>
+  <rapidXYspeed>12000</rapidXYspeed> 
+  <rapidZspeed>1500</rapidZspeed>
+

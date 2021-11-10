@@ -1,0 +1,16 @@
+
+  <autoConfigureQuality name="MaterialMeasurement">
+    <bottomSolidLayers>0</bottomSolidLayers>
+    <externalInfillAngles>90</externalInfillAngles>
+    <skirtOffset>0</skirtOffset>
+  </autoConfigureQuality>
+
+  <autoConfigureQuality name="Stength 0.0">
+    <toolChangeGcode>; Set strength of print - 0.0 is more fast/figurine/vase mode - 1.0 is with more temperature for stronger parts - default is M901 W0.0,M901 W0.0</toolChangeGcode>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Stength 0.5">
+    <toolChangeGcode>; Set strength of print - 0.0 is more fast/figurine/vase mode - 1.0 is with more temperature for stronger parts - default is M901 W0.5,M901 W0.5</toolChangeGcode>
+  </autoConfigureQuality>
+  <autoConfigureQuality name="Stength 1.0">
+    <toolChangeGcode>; Set strength of print - 0.0 is more fast/figurine/vase mode - 1.0 is with more temperature for stronger parts - default is M901 W1.0,M901 W1.0</toolChangeGcode>
+  </autoConfigureQuality>

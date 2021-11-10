@@ -1,0 +1,24 @@
+  <autoConfigureMaterial name="PLA cooling">
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="25"/>
+      <setpoint layer="3" speed="50"/>
+      <setpoint layer="4" speed="75"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="PETG+TPU cooling">
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="15"/>
+      <setpoint layer="3" speed="30"/>
+      <setpoint layer="4" speed="45"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+  <autoConfigureMaterial name="Nylon cooling">
+    <fanSpeed>
+      <setpoint layer="1" speed="0"/>
+      <setpoint layer="2" speed="15"/>
+      <setpoint layer="3" speed="30"/>
+    </fanSpeed>
+  </autoConfigureMaterial>
+
