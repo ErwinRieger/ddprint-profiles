@@ -7,7 +7,7 @@ machine-profiles: Machine profiles for different printers.
 
 mat-profiles: Material profiles measuerd with ddprint.
 
-s3d-profiles: Some simplify 3d profiles (.fff) and some scripts to create them from a base template.
+s3d-profiles: Some stuff to generate simplify 3d profiles (.fff) from a base template.
 
 
 
