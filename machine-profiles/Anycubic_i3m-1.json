@@ -1,17 +1,20 @@
 {
-  "# Ender default feeder",
+  "#",
+  "# Printer profile for the Anycubic i3 mega (0)",
+  "#",
+  "# Default feeder (titan)",
   "hwVersion": 5,
   "axes"  : {
     "X" : {
-      "platform_length" : 230,
+      "platform_length" : 215,
       "max_feedrate"  : 200,
       "steps_per_mm"  : 80,
       "jerk"          : 10,
-      "home_dir"      : 1,
+      "home_dir"      : 0,
       "home_feedrate" : 30
     },
     "Y" : {
-      "platform_length":  225,
+      "platform_length": 215,
       "max_feedrate"  : 200,
       "steps_per_mm"  : 80,
       "jerk"          : 10,
@@ -19,77 +22,81 @@
       "home_feedrate" : 30
     },
     "Z" : {
-      "# Available height is 325, but axis gets sticky above 300mm.",
-      "platform_length": 300,
+      "platform_length": 205,
       "max_feedrate"  : 25,
-      "steps_per_mm"  : 800,
+      "steps_per_mm"  : 400,
       "jerk"          : 0.5,
       "home_dir"      : 0,
-      "home_feedrate" : 20
+      "home_feedrate" : 10
     },
     "A" : {
       "max_feedrate"  : 45,
-      "steps_per_mm"  : 98,
+      "steps_per_mm"  : 435,
       "jerk"          : 7.5
     },
     "B" : {
       "max_feedrate"  : 45,
-      "steps_per_mm"  : 93,
+      "steps_per_mm"  : 435,
       "jerk"          : 7.5
     }
   },
+
   # Length of bowden tube for *insertfilament* command
-  "bowdenLength": 700,
+  "bowdenLength": 550,
+
   # Max stepper frequency
   "maxStepperFreq": 50000,
+
   # 1.75 mm filament, with advance [mm/s]
   "RetractFeedrate"  : 40,
   "RetractLength"  : 4.0,
+
   # Maximum acceleration of each axis X, Y, Z, A, B [mm/s²]
-  # "MaxAxisAcceleration": [3000, 3000, 100, 7500, 7500],
-  "MaxAxisAcceleration": [2500, 2500, 100, 7500, 7500],
+  "MaxAxisAcceleration": [3000, 3000, 100, 7500, 7500],
+
   # Sensor counts per mm
   # 1024/(3.17*math.pi)
   "filSensorCountsPerMM": 102.823,
+
   # Sensor reading interval [s]
   "filSensorInterval": 0.1,
+
   # Filamentsensor calibration data. This is the ratio of
   # filamentsensor counts to e-stepper steps.
-  "filSensorCalibration": 1.067,
+  "filSensorCalibration": 0.2405,
 
   # From pidAutoTune.py:
+  "Tu": 8.6431,
+  "Tg": 113.2482,
+  
   "ZN": {
-    "Kp": 14.7016,
-    "Ki": 1.0154,
-    "Kd": 4.0616
-  },
-
+    #Ziegler PID 1.2:
+    "Kp": 13.2545,
+    "Ki": 0.7668,
+    "Kd": 3.0671},
   "CH": {
-    "Kp": 7.3508,
-    "Ki": 0.0666,
-    "Kd": 2.0308
-  },
-
+    #Chien aperiodisch PID, gute führung:
+    "Kp": 6.6273,
+    "Ki": 0.0585,
+    "Kd": 1.5335},
   "TS": {
-    "Kp": 1.6070,
+    "Kp": 1.6860,
     "Ki": 0.0174,
-    "Kd": 0.0718
-  },
-
-  "Tu": 7.2393,
-  "Tg": 110.3832,
+    "Kd": 0.0719},
 
   # Bedleveling mode
   "bedLevelMode": "Rect4Point",
-  "# Bedleveling Z value, always 0 for the ender5",
-  "add_homeing_z": 0,
+
   # Diameter of feeder (knurled) wheel, take some 
   # filament compression into account.
-  "feederWheelDiam": 10.85,
-  "weakPowerBedTemp": 50,
+  "feederWheelDiam": 7.3,
+  # "weakPowerBedTemp": 50,
 
   # Hotend autotune pid value
-  "Xo": 127
+  "Xo": 150,
+
+  # Ai3m can't use 1 Mbaud bautrate
+  "baudRateLimit": 500000
 }
 
 
