@@ -1,7 +1,7 @@
 
 for nozzle in "40" "80"; do
 
-  for machine in jennyprinter um2 ender5; do
+  for machine in jennyprinter um2 ender5 anycubic-i3m; do
 
     resultProfile="./${machine}-n${nozzle}.fff"
 
