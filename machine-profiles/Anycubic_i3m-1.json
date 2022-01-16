@@ -31,12 +31,12 @@
     },
     "A" : {
       "max_feedrate"  : 45,
-      "steps_per_mm"  : 435,
+      "steps_per_mm"  : 425,
       "jerk"          : 7.5
     },
     "B" : {
       "max_feedrate"  : 45,
-      "steps_per_mm"  : 435,
+      "steps_per_mm"  : 425,
       "jerk"          : 7.5
     }
   },
@@ -52,7 +52,7 @@
   "RetractLength"  : 4.0,
 
   # Maximum acceleration of each axis X, Y, Z, A, B [mm/s²]
-  "MaxAxisAcceleration": [3000, 3000, 100, 7500, 7500],
+  "MaxAxisAcceleration": [3000, 2000, 100, 7500, 7500],
 
   # Sensor counts per mm
   # 1024/(3.17*math.pi)
