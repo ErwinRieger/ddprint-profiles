@@ -6,7 +6,7 @@
   <extruder name="Primary Extruder">
     <toolheadNumber>0</toolheadNumber>
     <autoWidth>0</autoWidth>
-    <extrusionMultiplier>1.05</extrusionMultiplier>
+    <extrusionMultiplier>1.00</extrusionMultiplier>
     <useRetract>1</useRetract>
     <retractionDistance>4</retractionDistance>
     <extraRestartDistance>0</extraRestartDistance>
