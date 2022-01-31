@@ -19,8 +19,7 @@
       "home_feedrate" : 30
     },
     "Z" : {
-      "# Available height is 325, but axis gets sticky above 300mm.",
-      "platform_length": 300,
+      "platform_length": 320,
       "max_feedrate"  : 25,
       "steps_per_mm"  : 800,
       "jerk"          : 0.5,
