@@ -2,12 +2,12 @@
   "version": 5,
   "material_diameter" : 1.75,
   # Min printing temp for good look (figurine print).
-  "hotendBaseTemp"   : 200,
+  "hotendBaseTemp"   : 215,
   # Min printing temp for good layer adhesion (parts print).
-  "hotendGoodTemp"    : 220,
-  "hotendMaxTemp"     : 260,
-  "bedTemp"           : 65,
-  "bedTempReduced"    : 60,
+  "hotendGoodTemp"    : 235,
+  "hotendMaxTemp"     : 255,
+  "bedTemp"           : 60,
+  "bedTempReduced"    : 55,
   # xxx todo: measure
   "kAdvance"          : 0.5,
 
