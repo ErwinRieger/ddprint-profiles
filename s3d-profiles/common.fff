@@ -126,6 +126,7 @@
   <retractionGcode></retractionGcode>
   <toolChangeGcode>; Set strength of print - 0.0 is more fast/figurine/vase mode - 1.0 is with more temperature for stronger parts - default is M901 W0.5,M901 W0.5</toolChangeGcode>
   <startingGcode>M907 E1400 ; increase extruder current,G28 ; home all axes,; purging:,G1 X5 Y6 F[travel_speed]  ; move to front near the clamp,G1 Z5 F2400                 ; lower head,G92 E0                           ; reset E,G1 E50 F150                  ; extrude 50mm make a blob,G92 E0                           ; reset E,G1 Z15 F60                    ; higher (hopeing blob will stay on bed),G1 E-5 F2400                  ; retract,G1 X200 Z0 F[travel_speed]  ; move away,G1 E0 F[retract_speed]     ; unretract</startingGcode>
+  <endingGcode>G1 X0 F[travel_speed]  ; move away from part</endingGcode>
   <createX3G>0</createX3G>
   <celebration>0</celebration>
   <celebrationSong>Random Song</celebrationSong>
