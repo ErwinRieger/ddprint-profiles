@@ -6,10 +6,10 @@
   # Min printing temp for good layer adhesion (parts print).
   "hotendGoodTemp"    : 230,
   "hotendMaxTemp"     : 260,
-  "bedTemp"           : 85,
-  "bedTempReduced"    : 80,
+  "bedTemp"           : 75,
+  "bedTempReduced"    : 70,
   "# Temperature to keep bed on when printing on glass-bed, to avoid *chippig*.",
-  "keepBedtemp"       : 60,
+  "keepBedtemp"       : 80,
   "kAdvance"          : 0.2,
 
   "properties_80" : {
